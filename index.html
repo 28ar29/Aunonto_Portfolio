@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aunonto Rahman - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Aunonto Rahman
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          ar29@williams.edu
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +9175358977
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Aunonto Rahman! <img src="https://media.licdn.com/dms/image/v2/D5603AQGsdTkWrH4euA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728786352538?e=1756944000&v=beta&t=0GCNLEUTWbxEGSTmGUP89hd2fw0JI8IoBSADtRJ0lJw" width="60px"/>
+          </h1>
+          <p>
+            Hi, I’m Aunonto Rahman — a college student passionate about technology, learning, and making things work. I’m exploring paths in software engineering, IT support, UX/UI design, and cybersecurity, and I enjoy applying my skills to real-world projects, whether it’s building interactive web applications or helping others navigate tech challenges.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="https://images.seeklogo.com/logo-png/29/2/css-3-logo-png_seeklogo-297888.png"/>
+          <h6>CSS</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=1920%2C1920&ssl=1"/>
+          <h6>Python</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="https://www.adm.ee/wordpress/wp-content/uploads/2023/08/JAVA.png"/>
+          <h6>Java</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>WSO</h3>
+            <ul>
+              <li>I contributed to Williams Students Online (WSO) by supporting site maintenance and enhancing student resources on the platform</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Milne Public Library</h3>
+            <ul>
+              <li>At the Milne Public Library, I assisted in preparing and presenting educational technology workshops to help community members navigate digital tools and resources.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>NYTimes Game Recreations</h3>
+            <ul>
+              <li>Recreated various games from NYTimes inlcuding Wordle, Digits, Spelling Bee etc using Python</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Aunonto’s one-on-one tech tutoring sessions with seniors were outstanding. He took the time to understand each person’s needs and explained everything in an approachable way, helping them become more comfortable with smartphones, computers, and everyday apps."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Aunonto was incredibly patient and knowledgeable when assisting our patrons with their technology questions. Whether it was troubleshooting devices or explaining digital library services, he made sure everyone felt supported and confident."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "During our tech workshops, Aunonto played a key role in preparing materials and guiding attendees through new digital tools. His clear explanations and calm approach made even the most intimidating tech tasks manageable for our community members."
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>
+        Thank you for leaving a reccomendation!
+      </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
